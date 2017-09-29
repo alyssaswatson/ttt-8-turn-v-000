@@ -33,7 +33,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index) == true
-    puts move(index, current_player) && display_board
+    puts move(index, character) && display_board
   else
     until valid_move?(board, index) == true
       puts "Please enter 1-9:"
