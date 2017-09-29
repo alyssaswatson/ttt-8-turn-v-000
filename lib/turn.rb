@@ -1,5 +1,3 @@
-
-
 def display_board(board)
    puts " #{board[0]} " + "|" + " #{board[1]} " + "|" + " #{board[2]} "
    puts "-----------"
@@ -28,4 +26,8 @@ end
 def move(board, index, character = "X")
    board[index] = character
    return board
+end
+
+def turn(board)
+  puts "Please enter 1-9:"
 end
