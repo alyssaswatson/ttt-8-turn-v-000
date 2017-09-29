@@ -28,8 +28,8 @@ def move(board, index, character = "X")
    return board
 end
 
-def turn(board)
+def turn(board, index)
   puts "Please enter 1-9:"
   index = gets.strip
-  valid_move?(index) == true ? move(index, current_player) && display_board : turn 
+  valid_move?(board, index) == true ? move(index, current_player) && display_board : turn 
 end
